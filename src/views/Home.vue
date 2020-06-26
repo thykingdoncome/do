@@ -1,22 +1,19 @@
 <template>
   <div id="app">
-    <Header />
     <AddTodo @add-todo="addTodo" />
     <Todos :todos="todos" @del-todo="delTodo" />
   </div>
 </template>
 
 <script>
-import Todos from "./components/Todos";
-import AddTodo from "./components/AddTodo";
-import Header from "./components/layout/Header";
+import Todos from "../components/Todos";
+import AddTodo from "../components/AddTodo";
 import axios from "axios";
 
 export default {
-  name: "App",
+  name: "Home",
   components: {
     Todos,
-    Header,
     AddTodo,
   },
   data() {
@@ -59,12 +56,6 @@ export default {
 </script>
 
 <style>
-* {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 .btn {
   display: inline-block;
