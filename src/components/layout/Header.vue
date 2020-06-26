@@ -1,25 +1,27 @@
 <template>
-    <div class="header">
-        <h1>Todo List</h1>
-    </div>
+  <div class="header">
+    <h1>Todo List</h1>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Header'
-}
+  name: "Header",
+};
 </script>
 
 <style scoped>
-  .header {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  .header a {
-    color: #fff;
-    padding-right: 5px;
-    text-decoration: none;
-  }
+.header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.header a {
+  color: #fff;
+  padding-right: 5px;
+  text-decoration: none;
+}
 </style>
